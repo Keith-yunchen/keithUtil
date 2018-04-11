@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <style>
+        body{
+            font-family: SimSun;
+        }
+        td {
+            border: 1px solid #000
+        }
+
+        table {
+            width: 610px;
+            border-collapse: collapse;
+            border-spacing: 0;
+            table-layout:fixed;
+            word-break:break-all;
+        }
+
+        p {
+            font-weight: bold;
+        }
+    </style>
+    <title>申请资料</title>
+</head>
+<body>
+<p>一：基本信息</p>
+<table>
+    <tr>
+        <td>申请单位</td>
+        <td>${applOrg}</td>
+        <td>编号</td>
+        <td>${applSn}</td>
+    </tr>
+    <tr>
+        <td>使用部门</td>
+        <td>${useOrg}</td>
+        <td>经办人</td>
+        <td>${hand}</td>
+    </tr>
+    <tr>
+        <td>使用部门负责人</td>
+        <td>${useAgent}</td>
+        <td>使用部门负责人确认日期</td>
+        <td>${useAgentTs}</td>
+    </tr>
+    <tr>
+        <td>规划专业总工</td>
+        <td>${planEng}</td>
+        <td>规划专业总工确认日期</td>
+        <td>${planEngTs}</td>
+    </tr>
+    <tr>
+        <td>档案管理中心</td>
+        <td>${arcMan}</td>
+        <td>联系电话</td>
+        <td>${tel}</td>
+    </tr>
+    <tr>
+        <td>归档接收人</td>
+        <td colspan="3">${arcRec}</td>
+    </tr>
+</table>
+
+<p>二：站点信息</p>
+<table name="true" id="sta">
+    <tr>
+        <td>序号</td>
+        <td>站点</td>
+        <td>表名</td>
+        <td>时间段</td>
+    </tr>
+    <tr>
+        <td>${sn}</td>
+        <td>${wiuStr}</td>
+        <td>${tabStr}</td>
+        <td>${timeStr}</td>
+    </tr>
+</table>
+</body>
+</html>
